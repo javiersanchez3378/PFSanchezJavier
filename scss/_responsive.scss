@@ -1,0 +1,91 @@
+
+
+// Pantallas grandes (Desktop)
+@media (min-width: 1200px) {
+  .flex-container {
+    display: flex;
+  }
+
+  .section {
+    flex-basis: 70%;
+  }
+
+  .sidebar {
+    flex-basis: 28%;
+  }
+
+  #noticias .noticia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  // Configuración de 3 columnas para la grilla de discografía
+  .discografia-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+// Pantallas medianas (Tablets)
+@media (max-width: 1199px) and (min-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .section, .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .discografia-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #noticias .noticia {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+// Pantallas pequeñas (Móviles)
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .title-image {
+    .img-title {
+      max-width: 100%;
+    }
+  }
+
+  .discografia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logos-container .logo img {
+    max-width: 80%;
+  }
+
+  #noticias .noticia {
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

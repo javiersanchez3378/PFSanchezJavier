@@ -1,0 +1,17 @@
+
+@import 'variables';
+
+header {
+  background-color: $color-dark;
+  padding: 0;
+  width: 100%;
+
+  .carousel-inner {
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+}

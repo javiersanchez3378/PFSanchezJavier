@@ -1,0 +1,29 @@
+
+@import 'variables';
+
+footer {
+  background-color: $color-dark;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 20px;
+  width: 100%;
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin: 10px 0;
+
+    a {
+      display: inline-block;
+      margin: 0 10px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

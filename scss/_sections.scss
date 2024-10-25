@@ -19,7 +19,7 @@
     margin-bottom: 20px;
 
     &.sidebar {
-      background-color: $color-light-bg;
+      background-color: $color-background;
     }
   }
 }
@@ -28,7 +28,7 @@
 .title-image {
   text-align: center;
   margin: 0 auto;
-  
+
   .img-title {
     max-width: 100%;
     height: auto;
@@ -50,11 +50,10 @@
 
   h2 {
     font-size: 28px;
-    color: $color-text;
+    color: $color-text-dark;
     margin-bottom: 20px;
   }
 
-  // Ajuste de la grilla para tres columnas en desktop
   .discografia-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -102,20 +101,20 @@
 // Sección Nosotros
 #nosotros {
   padding: 20px;
-  background-color: lighten($color-background, 5%);
+  background-color: $color-background;
   margin: 20px 0;
   border-radius: $border-radius;
   text-align: center;
 
   h2 {
     font-size: 28px;
-    color: $color-text;
+    color: $color-text-dark;
     margin-bottom: 20px;
   }
 
   p {
     font-size: 16px;
-    color: darken($color-text, 20%);
+    color: $color-text-light;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -145,4 +144,58 @@
       }
     }
   }
+}
+
+// Sección Noticias
+#noticias {
+  padding: 20px;
+  background-color: $color-background;
+  margin: 20px 0;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 28px;
+    color: $color-text-dark;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .noticia {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+
+    h3 {
+      font-size: 24px;
+      color: $color-text-dark;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $color-text-light;
+      line-height: 1.5;
+    }
+  }
+}
+
+.separador-imagen {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+  img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; 
+  }
+}
+
+.noticia, .historia article {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6;
 }

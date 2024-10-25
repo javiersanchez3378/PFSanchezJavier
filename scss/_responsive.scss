@@ -81,11 +81,12 @@
   }
 
   #noticias .noticia {
-    flex-direction: column;
-    gap: 10px;
-
-    img {
-      width: 100%;
+    padding: 10px;
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
     }
   }
 }
